@@ -15,4 +15,5 @@ public class DataModel {
     private UUID id;
     private String name;
     private BigDecimal balance;
+    private LocalDateTime createdAt;
 }

@@ -1,8 +1,6 @@
 package com.replication.primary.models;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -10,6 +8,8 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
+@Entity
+@Table(name = "data_models")
 public class DataModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
